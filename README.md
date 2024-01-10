@@ -1,6 +1,6 @@
 # BDM (Balanced Diet Management)
 
-## Installation
+## 엉덩이를 씰룩씰룩 춤을 쳐요~
 
 -   Clone this Repo
 -   Install dependencies using NPM
