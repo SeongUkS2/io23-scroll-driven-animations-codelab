@@ -1,4 +1,4 @@
-# Google I/O ’23 – Scroll-Driven Animations Codelab
+# BDM (Balanced Diet Management)
 
 ## Installation
 
