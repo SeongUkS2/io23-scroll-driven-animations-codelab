@@ -1,24 +1,39 @@
 # BDM (Balanced Diet Management)
+식단 관리 사이트를 위한 Entity-Relationship Diagram (ERD)를 설계할 때 고려해야 할 몇 가지 핵심 개체와 관계들이 있습니다. 아래는 일반적으로 식단 관리 사이트에서 사용될 수 있는 중요한 엔터티와 관계의 예시입니다.
 
-## 엉덩이를 씰룩씰룩 춤을 쳐요~
+## 1. **사용자 (User):**
 
--   Clone this Repo
--   Install dependencies using NPM
+   - 사용자의 고유 식별자 (User ID)
+   - 사용자 이름
+   - 이메일 주소
+   - 비밀번호
+   - 성별, 나이 등의 개인 정보
+   - 사용자 설정 및 기타 개인화 정보
 
-    ```bash
-    npm i
-    ```
+## 2. **식품 (Food):**
+   - 식품의 고유 식별자 (Food ID)
+   - 식품 이름
+   - 칼로리, 단백질, 탄수화물 등의 영양 정보
+   - 식품 그룹 (과일, 채소, 단백질 소스 등)
 
-## Running the project
+## 3. **식단 (Meal):**
+   - 식단의 고유 식별자 (Meal ID)
+   - 식단 이름 또는 설명
+   - 식단에 포함된 각 식품의 수량 또는 무게
+   - 식단의 총 칼로리, 영양소 정보
 
--   Start the local server
+## 4. **일일 섭취 (Daily Intake):**
+   - 사용자가 특정 날짜에 섭취한 칼로리 및 영양소의 기록
+   - 일일 섭취의 고유 식별자 (Intake ID)
+   - 날짜 및 시간 정보
 
-    ```bash
-    npm run start
-    ```
+## 5. **섭취한 식단 (Consumed Meal):**
+   - 특정 일의 사용자가 섭취한 식단 정보
+   - 일일 섭취와 식단 간의 관계
 
--   Visit [http://localhost:3000/](http://localhost:3000/)
-
-# License
+## 6. **식단과 사용자 간의 관계 (User-Meal Relationship):**
+   - 사용자가 생성한 식단과의 관계
+   - 다수의 사용자가 하나의 식단을 사용할 수 있는지 여부
+# 이러한 엔터티와 관계들은 ERD를 시작하는데 도움이 될 수 있습니다. 각각의 엔터티는 속성(Attributes)을 가지며, 관계는 이러한 엔터티들 간의 연결을 나타냅니다. 설계된 ERD는 데이터베이스 테이블을 생성하는 데 사용될 수 있습니다.
 
 See enclosed [LICENSE](./LICENSE)
